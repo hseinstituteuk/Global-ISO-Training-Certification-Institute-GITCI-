@@ -1,0 +1,801 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Global CPD &amp; ISO Certification Board (GCICB)
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .typing-text {
+    border-right: 2px solid #2563eb;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .fade-in {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  .spinner {
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* Scroll smooth for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Hide number input arrows */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900 selection:bg-blue-500 selection:text-white">
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col">
+   <!-- Header / Navbar -->
+   <header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+     <a class="flex items-center space-x-3" href="#home">
+      <img alt="Official logo of Global CPD &amp; ISO Certification Board with blue background and white letters GCICB" class="w-12 h-12 rounded" height="48" loading="lazy" src="logo.jpg" width="48"/>
+      <span class="font-roboto font-bold text-xl text-blue-700 select-none">
+       GCICB
+      </span>
+     </a>
+     <ul class="hidden md:flex space-x-8 font-semibold text-blue-700 tracking-wide" id="nav-menu">
+      <li>
+       <a class="hover:text-blue-900 transition" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-900 transition" href="#about">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-900 transition" href="#courses">
+        Courses
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-900 transition" href="#enroll">
+        Enroll
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-900 transition" href="#verification">
+        Verification
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-blue-900 transition" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+     <button aria-label="Toggle menu" class="md:hidden text-blue-700 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </nav>
+    <div class="md:hidden bg-white border-t border-blue-200 hidden" id="mobile-menu">
+     <ul class="flex flex-col space-y-2 p-4 font-semibold text-blue-700 tracking-wide">
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#about">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#courses">
+        Courses
+       </a>
+      </li>
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#enroll">
+        Enroll
+       </a>
+      </li>
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#verification">
+        Verification
+       </a>
+      </li>
+      <li>
+       <a class="block hover:text-blue-900 transition" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <main class="flex-grow">
+    <!-- Hero Section -->
+    <section aria-label="Homepage hero section" class="relative bg-white overflow-hidden" id="home">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 flex flex-col md:flex-row items-center md:items-start gap-10">
+      <div class="flex-1 max-w-xl text-center md:text-left">
+       <h1 aria-live="polite" class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 mb-6 fade-in">
+        <span class="typing-text" id="typing-text">
+        </span>
+       </h1>
+       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed fade-in" style="animation-delay: 1.5s;">
+        Your trusted partner for CPD Verified and ISO Accredited certifications worldwide.
+       </p>
+       <div class="mt-8 flex justify-center md:justify-start space-x-6 fade-in" style="animation-delay: 2s;">
+        <img alt="Blue badge with white text CPD Verified certification badge" class="w-24 h-24 rounded-lg shadow-lg" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/795c93ea-6d2a-4294-b919-513b9a3a679b.jpg" width="120"/>
+        <img alt="Blue badge with white text ISO Accredited certification badge" class="w-24 h-24 rounded-lg shadow-lg" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/91f3f770-07b5-4ccb-1c1a-e85f32a0b441.jpg" width="120"/>
+       </div>
+      </div>
+      <div class="flex-1 max-w-lg">
+       <img alt="Professional training and certification visual showing diverse group of people in a modern classroom with certificates and digital devices" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/81e284cc-9226-4038-dd31-0f92b6ea602c.jpg" width="600"/>
+      </div>
+     </div>
+    </section>
+    <!-- About Section -->
+    <section aria-labelledby="about-title" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="about">
+     <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center fade-in" id="about-title">
+      About GCICB
+     </h2>
+     <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-6 fade-in" style="animation-delay: 0.3s;">
+      <p>
+       The Global CPD &amp; ISO Certification Board (GCICB) is a leading accreditation body recognized worldwide for its commitment to quality, integrity, and excellence in professional development and certification.
+      </p>
+      <p>
+       We provide CPD approval and ISO accreditation to training providers and courses, ensuring that learners receive the highest standard of education and certification that is globally recognized and respected.
+      </p>
+      <p>
+       Our mission is to empower professionals across industries by validating their skills and knowledge through trusted certification processes.
+      </p>
+     </div>
+     <div aria-label="GCICB statistics counters" class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div class="fade-in" style="animation-delay: 0.6s;">
+       <p class="text-5xl font-extrabold text-blue-700" id="counter-students">
+        0
+       </p>
+       <p class="mt-2 text-lg font-semibold text-gray-800">
+        Students Trained
+       </p>
+      </div>
+      <div class="fade-in" style="animation-delay: 0.9s;">
+       <p class="text-5xl font-extrabold text-blue-700" id="counter-certificates">
+        0
+       </p>
+       <p class="mt-2 text-lg font-semibold text-gray-800">
+        Certificates Verified
+       </p>
+      </div>
+      <div class="fade-in" style="animation-delay: 1.2s;">
+       <p class="text-5xl font-extrabold text-blue-700" id="counter-countries">
+        0
+       </p>
+       <p class="mt-2 text-lg font-semibold text-gray-800">
+        Countries Covered
+       </p>
+      </div>
+     </div>
+    </section>
+    <!-- Courses Section -->
+    <section aria-labelledby="courses-title" class="bg-blue-50 py-16" id="courses">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-10 text-center fade-in" id="courses-title">
+       Our CPD &amp; ISO Approved Courses
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- Course Card 1 -->
+       <article aria-label="Course ISO 9001 Quality Management System" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 0.2s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          ISO 9001 Quality Management System
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 5 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD &amp; ISO Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for ISO 9001 Quality Management System" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="ISO 9001 Quality Management System">
+         Enroll Now
+        </button>
+       </article>
+       <!-- Course Card 2 -->
+       <article aria-label="Course ISO 14001 Environmental Management System" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 0.4s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          ISO 14001 Environmental Management System
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 4 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD &amp; ISO Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for ISO 14001 Environmental Management System" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="ISO 14001 Environmental Management System">
+         Enroll Now
+        </button>
+       </article>
+       <!-- Course Card 3 -->
+       <article aria-label="Course ISO 45001 Occupational Health and Safety" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 0.6s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          ISO 45001 Occupational Health and Safety
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 5 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD &amp; ISO Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for ISO 45001 Occupational Health and Safety" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="ISO 45001 Occupational Health and Safety">
+         Enroll Now
+        </button>
+       </article>
+       <!-- Course Card 4 -->
+       <article aria-label="Course ISO 27001 Information Security Management" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 0.8s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          ISO 27001 Information Security Management
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 6 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD &amp; ISO Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for ISO 27001 Information Security Management" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="ISO 27001 Information Security Management">
+         Enroll Now
+        </button>
+       </article>
+       <!-- Course Card 5 -->
+       <article aria-label="Course CPD Professional Development" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 1s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          CPD Professional Development
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 3 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for CPD Professional Development" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="CPD Professional Development">
+         Enroll Now
+        </button>
+       </article>
+       <!-- Course Card 6 -->
+       <article aria-label="Course ISO 22301 Business Continuity Management" class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition-shadow fade-in" style="animation-delay: 1.2s;" tabindex="0">
+        <div>
+         <h3 class="text-xl font-semibold text-blue-800 mb-2">
+          ISO 22301 Business Continuity Management
+         </h3>
+         <p class="text-gray-700 mb-3">
+          Duration: 4 Days
+         </p>
+         <p class="text-sm font-semibold text-blue-600 mb-4">
+          Accreditation: CPD &amp; ISO Approved
+         </p>
+        </div>
+        <button aria-label="Enroll now for ISO 22301 Business Continuity Management" class="mt-auto bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" data-course="ISO 22301 Business Continuity Management">
+         Enroll Now
+        </button>
+       </article>
+      </div>
+     </div>
+    </section>
+    <!-- Enroll Section -->
+    <section aria-labelledby="enroll-title" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="enroll">
+     <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center fade-in" id="enroll-title">
+      Enroll Now
+     </h2>
+     <form aria-describedby="enroll-desc" class="bg-white shadow-md rounded-lg p-8 space-y-6 fade-in" id="enroll-form" novalidate="" style="animation-delay: 0.3s;">
+      <p class="sr-only" id="enroll-desc">
+       Enrollment form for GCICB courses. Required fields: Name, Email,
+      Phone, Course Selection.
+      </p>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="enroll-name">
+        Full Name
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <input aria-required="true" autocomplete="name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="enroll-name" name="name" placeholder="Your full name" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="enroll-email">
+        Email Address
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <input aria-required="true" autocomplete="email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="enroll-email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="enroll-phone">
+        Phone Number
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <input aria-required="true" autocomplete="tel" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="enroll-phone" name="phone" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+123 456 7890" required="" type="tel"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="enroll-course">
+        Select Course
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <select aria-required="true" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="enroll-course" name="course" required="">
+        <option disabled="" selected="" value="">
+         Select a course
+        </option>
+        <option value="ISO 9001 Quality Management System">
+         ISO 9001 Quality Management System
+        </option>
+        <option value="ISO 14001 Environmental Management System">
+         ISO 14001 Environmental Management System
+        </option>
+        <option value="ISO 45001 Occupational Health and Safety">
+         ISO 45001 Occupational Health and Safety
+        </option>
+        <option value="ISO 27001 Information Security Management">
+         ISO 27001 Information Security Management
+        </option>
+        <option value="CPD Professional Development">
+         CPD Professional Development
+        </option>
+        <option value="ISO 22301 Business Continuity Management">
+         ISO 22301 Business Continuity Management
+        </option>
+       </select>
+      </div>
+      <button aria-live="polite" class="w-full bg-blue-700 text-white font-semibold py-3 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" type="submit">
+       Submit Enrollment
+      </button>
+      <p aria-live="assertive" class="mt-4 text-green-700 font-semibold text-center hidden" id="enroll-success" role="alert">
+       Enrollment Successful – Welcome to GCICB.
+      </p>
+     </form>
+    </section>
+    <!-- Verification Section -->
+    <section aria-labelledby="verification-title" class="bg-blue-50 py-16" id="verification">
+     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center fade-in" id="verification-title">
+       Certificate Verification Portal
+      </h2>
+      <form aria-describedby="verification-desc" class="flex flex-col sm:flex-row items-center gap-4 fade-in" id="verification-form" novalidate="" style="animation-delay: 0.3s;">
+       <p class="sr-only" id="verification-desc">
+        Enter your certificate number to verify your certificate status.
+       </p>
+       <input aria-label="Certificate Number" aria-required="true" autocomplete="off" class="flex-grow border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="certificate-number" name="certificateNumber" placeholder="Enter Certificate Number" required="" type="text"/>
+       <button aria-live="polite" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" type="submit">
+        Verify
+       </button>
+      </form>
+      <div aria-atomic="true" aria-live="polite" class="mt-10 bg-white rounded-lg shadow-md p-6 min-h-[180px] flex flex-col justify-center items-center text-center" id="verification-result">
+       <p class="text-gray-500">
+        Enter a certificate number above to verify.
+       </p>
+      </div>
+     </div>
+    </section>
+    <!-- Contact Section -->
+    <section aria-labelledby="contact-title" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="contact">
+     <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center fade-in" id="contact-title">
+      Contact Us
+     </h2>
+     <form aria-describedby="contact-desc" class="bg-white shadow-md rounded-lg p-8 space-y-6 fade-in" id="contact-form" novalidate="" style="animation-delay: 0.3s;">
+      <p class="sr-only" id="contact-desc">
+       Contact form for GCICB. Required fields: Name, Email, Message.
+      </p>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="contact-name">
+        Full Name
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <input aria-required="true" autocomplete="name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="contact-name" name="name" placeholder="Your full name" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="contact-email">
+        Email Address
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <input aria-required="true" autocomplete="email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="contact-email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block text-gray-700 font-semibold mb-2" for="contact-message">
+        Message
+        <span class="text-red-600">
+         *
+        </span>
+       </label>
+       <textarea aria-required="true" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y" id="contact-message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+      </div>
+      <button aria-live="polite" class="w-full bg-blue-700 text-white font-semibold py-3 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" type="submit">
+       Send Message
+      </button>
+      <p aria-live="assertive" class="mt-4 text-green-700 font-semibold text-center hidden" id="contact-success" role="alert">
+       Thank you for contacting GCICB. We will get back to you shortly.
+      </p>
+     </form>
+    </section>
+   </main>
+   <!-- Footer -->
+   <footer class="bg-white border-t border-blue-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+     <div class="flex items-center space-x-6">
+      <img alt="Blue CPD Verified badge with white text" class="w-20 h-20 rounded-lg shadow" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/37161be5-bc69-4a8e-0b61-f3876589c3ab.jpg" width="80"/>
+      <img alt="Blue ISO Accredited badge with white text" class="w-20 h-20 rounded-lg shadow" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c7149346-fd48-406f-fc71-e7a93b364e1c.jpg" width="80"/>
+     </div>
+     <p class="text-gray-600 text-center md:text-right text-sm select-none">
+      © 2024 Global CPD &amp; ISO Certification Board (GCICB). All rights reserved.
+     </p>
+    </div>
+   </footer>
+  </div>
+  <script>
+   // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Typing effect for hero text
+  const typingTextEl = document.getElementById('typing-text');
+  const typingStrings = [
+    'Global CPD & ISO Certification Board – Accredited, Trusted, Verified.'
+  ];
+  let typingIndex = 0;
+  let charIndex = 0;
+  let typingDelay = 50;
+  let erasingDelay = 30;
+  let newTextDelay = 2000; // Delay between strings
+  function type() {
+    if (charIndex < typingStrings[typingIndex].length) {
+      typingTextEl.textContent += typingStrings[typingIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      setTimeout(erase, newTextDelay);
+    }
+  }
+  function erase() {
+    if (charIndex > 0) {
+      typingTextEl.textContent = typingStrings[typingIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      setTimeout(type, typingDelay + 500);
+    }
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typingStrings.length) setTimeout(type, newTextDelay + 250);
+  });
+
+  // Animated counters for About section
+  function animateCounter(id, target, duration) {
+    const el = document.getElementById(id);
+    let start = 0;
+    const stepTime = Math.abs(Math.floor(duration / target));
+    const timer = setInterval(() => {
+      start += 1;
+      el.textContent = start.toLocaleString();
+      if (start >= target) clearInterval(timer);
+    }, stepTime);
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    animateCounter('counter-students', 12500, 2000);
+    animateCounter('counter-certificates', 9800, 2000);
+    animateCounter('counter-countries', 75, 2000);
+  });
+
+  // Enrollment form local storage save
+  const enrollForm = document.getElementById('enroll-form');
+  const enrollSuccess = document.getElementById('enroll-success');
+
+  enrollForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!enrollForm.checkValidity()) {
+      enrollForm.reportValidity();
+      return;
+    }
+    const formData = new FormData(enrollForm);
+    const enrollment = {
+      id: Date.now(),
+      name: formData.get('name').trim(),
+      email: formData.get('email').trim(),
+      phone: formData.get('phone').trim(),
+      course: formData.get('course'),
+      date: new Date().toISOString(),
+    };
+    let enrollments = JSON.parse(localStorage.getItem('gcicbEnrollments')) || [];
+    enrollments.push(enrollment);
+    localStorage.setItem('gcicbEnrollments', JSON.stringify(enrollments));
+    enrollSuccess.classList.remove('hidden');
+    enrollForm.reset();
+    setTimeout(() => {
+      enrollSuccess.classList.add('hidden');
+    }, 5000);
+  });
+
+  // Enroll Now buttons on course cards fill the form and scroll to enroll section
+  const enrollButtons = document.querySelectorAll('#courses button[data-course]');
+  enrollButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const courseName = btn.getAttribute('data-course');
+      document.getElementById('enroll-course').value = courseName;
+      document.getElementById('enroll-name').focus();
+      window.location.hash = '#enroll';
+    });
+  });
+
+  // Certificate Verification Portal
+  const verificationForm = document.getElementById('verification-form');
+  const verificationResult = document.getElementById('verification-result');
+  const certificateInput = document.getElementById('certificate-number');
+
+  // Sample offline certificate database
+  const certificateDB = [
+    {
+      certificateNumber: 'GCICB-2023-0001',
+      studentName: 'Alice Johnson',
+      courseName: 'ISO 9001 Quality Management System',
+      trainingCenter: 'Global Training Center - London',
+      status: 'Valid',
+      issueDate: '2023-01-15',
+      expiryDate: '2026-01-15',
+    },
+    {
+      certificateNumber: 'GCICB-2022-0456',
+      studentName: 'Mohamed Ali',
+      courseName: 'ISO 14001 Environmental Management System',
+      trainingCenter: 'Global Training Center - Dubai',
+      status: 'Expired',
+      issueDate: '2022-03-10',
+      expiryDate: '2025-03-10',
+    },
+    {
+      certificateNumber: 'GCICB-2024-0789',
+      studentName: 'Sofia Martinez',
+      courseName: 'CPD Professional Development',
+      trainingCenter: 'Global Training Center - New York',
+      status: 'Valid',
+      issueDate: '2024-02-20',
+      expiryDate: null,
+    },
+    {
+      certificateNumber: 'GCICB-2025-0345',
+      studentName: 'FAIZAN',
+      courseName: 'ISO 45001 Occupational Health and Safety',
+      trainingCenter: 'Global Training Center - Sydney',
+      status: 'Valid',
+      issueDate: '2025-09-02',
+      expiryDate: 'null',
+    },
+    {
+      certificateNumber: 'GCICB-2021-0123',
+      studentName: 'Emma Brown',
+      courseName: 'ISO 27001 Information Security Management',
+      trainingCenter: 'Global Training Center - Toronto',
+      status: 'Expired',
+      issueDate: '2021-07-12',
+      expiryDate: '2024-07-12',
+    },
+    {
+      certificateNumber: 'GCICB-2023-0678',
+      studentName: 'Noah Wilson',
+      courseName: 'ISO 22301 Business Continuity Management',
+      trainingCenter: 'Global Training Center - Singapore',
+      status: 'Valid',
+      issueDate: '2023-09-01',
+      expiryDate: '2026-09-01',
+    },
+    {
+      certificateNumber: 'GCICB-2024-0999',
+      studentName: 'Isabella Garcia',
+      courseName: 'ISO 9001 Quality Management System',
+      trainingCenter: 'Global Training Center - Berlin',
+      status: 'Valid',
+      issueDate: '2024-04-10',
+      expiryDate: '2027-04-10',
+    },
+    {
+      certificateNumber: 'GCICB-2022-0567',
+      studentName: 'Ethan Davis',
+      courseName: 'CPD Professional Development',
+      trainingCenter: 'Global Training Center - Paris',
+      status: 'Expired',
+      issueDate: '2022-11-20',
+      expiryDate: null,
+    },
+    {
+      certificateNumber: 'GCICB-2023-0234',
+      studentName: 'Mia Rodriguez',
+      courseName: 'ISO 14001 Environmental Management System',
+      trainingCenter: 'Global Training Center - Tokyo',
+      status: 'Valid',
+      issueDate: '2023-06-15',
+      expiryDate: '2026-06-15',
+    },
+    {
+      certificateNumber: 'GCICB-2021-0780',
+      studentName: 'James Lee',
+      courseName: 'ISO 45001 Occupational Health and Safety',
+      trainingCenter: 'Global Training Center - Johannesburg',
+      status: 'Expired',
+      issueDate: '2021-08-30',
+      expiryDate: '2024-08-30',
+    },
+    {
+      certificateNumber: 'GCICB-2024-0111',
+      studentName: 'Olivia Hernandez',
+      courseName: 'ISO 27001 Information Security Management',
+      trainingCenter: 'Global Training Center - San Francisco',
+      status: 'Valid',
+      issueDate: '2024-01-05',
+      expiryDate: '2027-01-05',
+    },
+    {
+      certificateNumber: 'GCICB-2023-0444',
+      studentName: 'Benjamin Clark',
+      courseName: 'ISO 22301 Business Continuity Management',
+      trainingCenter: 'Global Training Center - Amsterdam',
+      status: 'Valid',
+      issueDate: '2023-07-22',
+      expiryDate: '2026-07-22',
+    },
+    {
+      certificateNumber: 'GCICB-2022-0333',
+      studentName: 'Charlotte Lewis',
+      courseName: 'CPD Professional Development',
+      trainingCenter: 'Global Training Center - Madrid',
+      status: 'Expired',
+      issueDate: '2022-05-18',
+      expiryDate: null,
+    },
+    {
+      certificateNumber: 'GCICB-2023-0555',
+      studentName: 'Daniel Walker',
+      courseName: 'ISO 9001 Quality Management System',
+      trainingCenter: 'Global Training Center - Chicago',
+      status: 'Valid',
+      issueDate: '2023-10-10',
+      expiryDate: '2026-10-10',
+    },
+    {
+      certificateNumber: 'GCICB-2024-0666',
+      studentName: 'Amelia Young',
+      courseName: 'ISO 14001 Environmental Management System',
+      trainingCenter: 'Global Training Center - Milan',
+      status: 'Valid',
+      issueDate: '2024-03-12',
+      expiryDate: '2027-03-12',
+    }
+  ];
+
+  function formatDate(dateStr) {
+    if (!dateStr) return 'N/A';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return 'N/A';
+    return d.toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  }
+
+  verificationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const certNum = certificateInput.value.trim().toUpperCase();
+    if (!certNum) {
+      verificationResult.innerHTML = `<p class="text-red-600 font-semibold">Please enter a certificate number.</p>`;
+      return;
+    }
+    verificationResult.innerHTML = `<div class="spinner" role="status" aria-label="Loading"></div>`;
+    setTimeout(() => {
+      const cert = certificateDB.find(
+        (c) => c.certificateNumber.toUpperCase() === certNum
+      );
+      if (cert) {
+        const isValid = cert.status.toLowerCase() === 'valid';
+        verificationResult.innerHTML = `
+          <div class="max-w-md w-full text-left space-y-3 animate-fadeIn">
+            <h3 class="text-xl font-bold text-blue-700">Certificate Details</h3>
+            <p><span class="font-semibold">Student Name:</span> ${cert.studentName}</p>
+            <p><span class="font-semibold">Certificate Number:</span> ${cert.certificateNumber}</p>
+            <p><span class="font-semibold">Course Name:</span> ${cert.courseName}</p>
+            <p><span class="font-semibold">Training Center:</span> ${cert.trainingCenter}</p>
+            <p>
+              <span class="font-semibold">Status:</span> 
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-white font-semibold ${
+                isValid ? 'bg-green-600' : 'bg-red-600'
+              }">
+                <i class="fas fa-check-circle mr-2"></i> ${cert.status}
+              </span>
+            </p>
+            <p><span class="font-semibold">Issue Date:</span> ${formatDate(cert.issueDate)}</p>
+            <p><span class="font-semibold">Expiry Date:</span> ${
+              cert.expiryDate ? formatDate(cert.expiryDate) : 'N/A'
+            }</p>
+          </div>
+        `;
+      } else {
+        verificationResult.innerHTML = `
+          <div class="max-w-md w-full bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Certificate Not Found</strong>
+            <span class="block sm:inline"> – Please recheck number.</span>
+          </div>
+        `;
+      }
+    }, 3000);
+  });
+
+  // Contact form submission (offline, just show success)
+  const contactForm = document.getElementById('contact-form');
+  const contactSuccess = document.getElementById('contact-success');
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+    contactSuccess.classList.remove('hidden');
+    contactForm.reset();
+    setTimeout(() => {
+      contactSuccess.classList.add('hidden');
+    }, 6000);
+  });
+
+  // Accessibility: close mobile menu on link click
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+  </script>
+ </body>
+</html>
